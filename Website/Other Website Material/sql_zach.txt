@@ -1,0 +1,24 @@
+Select * from test
+select bob,rob,gob from test   //gets
+
+INSERT INTO test (bob,rob,gob) //adds
+VALUES (37,21,12);
+INSERT INTO test (bob,rob,gob)
+VALUES (32,21,12);
+INSERT INTO test (bob,rob,gob)
+VALUES (31,21,12);
+Select * from test
+
+
+
+UPDATE test /changes
+SET rob=76,gob=45
+WHERE bob=32;
+
+
+select  * from test
+
+DELETE FROM test //deletes
+WHERE bob=37;
+
+select  * from test

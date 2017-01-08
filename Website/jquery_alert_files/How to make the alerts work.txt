@@ -1,0 +1,16 @@
+The code:
+
+<link href="jquery_alert_files/jquery.alerts.css" rel="stylesheet" type="text/css" media="screen" />
+
+
+<!-- INCLUDE JQUERY HERE -->
+
+<script type="text/javascript" src="jquery_alert_files/jquery.ui.draggable.js"></script>
+
+
+<script type="text/javascript" src="jquery_alert_files/jquery.alerts.js"></script>
+
+
+Then, to successfully run an alert, you would call jAlert(text, title); or jConfirm(text, title, returnFunction); or jPrompt(textAboveTextEntry, textInTextEntry, title, returnFunction)
+
+Note: the text entries can have HTML in them to allow bolding, images, scripts, etc

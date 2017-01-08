@@ -1,0 +1,21 @@
+cd change location
+
+git checkout "branch" to change branches
+
+git branch :   -d (delete branch from local repository)
+
+git add "file name"
+
+git add --all    add all files to be commited
+
+git commit -m "comment"
+
+git commit -a -m "comment"   commit everything with comment
+
+git push 
+
+git pull
+
+git status 
+
+git help "command"

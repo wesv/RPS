@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="testbu"> the id testbu will identify this code to change</p>
+
+
+<p> the numbers will be typed by people try multiples of 5</p>
+
+<input id="5mult"  type="number">
+<button type="button" onclick="mutilple5()"> try it</button>
+
+<p id="5print"> </p>
+
+<button type="button"
+onclick="document.getElementById('testbu').innerHTML= 'into a pretty butterfly'">
+button </button>
+
+<button type="button"
+onclick="myFunction()">
+see in red </button>
+
+
+<script>
+window.alert("this site has pop-ups now");
+function mutilple5() {
+    var x, text;
+
+    // Get the value of the input field with id="5mult"
+    x = document.getElementById("5mult").value;
+
+    // If x is Not a Number or not a multiple of 5
+    if (isNaN(x) || (x%5)!=0) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    document.getElementById("5print").innerHTML = text;
+}
+
+function myFunction() {
+    var x = document.getElementById("testbu");
+    x.style.fontSize = "25px";           
+    x.style.color = "red"; 
+}
+</script>
+
+
+
+</body>
+</html>
+

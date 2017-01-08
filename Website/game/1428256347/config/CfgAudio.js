@@ -1,0 +1,1 @@
+﻿var AUDIO_MUSIC = new Audio("game/audio/music.mp3");

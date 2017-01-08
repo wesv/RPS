@@ -1,0 +1,1 @@
+﻿var SPRITE_spr = new Sprite(IMAGE_SPR, 0, 1, 3, false);

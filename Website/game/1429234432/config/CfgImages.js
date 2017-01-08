@@ -1,0 +1,21 @@
+var Image_splash = new ImageURL(pathForGame+"images/splash.png", [130,117]);
+var Image_sound_nonmuted = new ImageURL(pathForGame+"images/sound_nonmuted.png", [40,40]);
+var Image_sound_muted = new ImageURL(pathForGame+"images/sound_muted.png", [40,40]);
+var Image_rottenSplash = new ImageURL(pathForGame+"images/rottenSplash.png", [130,117]);
+var Image_rottenPotato = new ImageURL(pathForGame+"images/rottenPotato.png", [128,128]);
+var Image_potato = new ImageURL(pathForGame+"images/potato.png", [128,128]);
+var Image_playPotato = new ImageURL(pathForGame+"images/playPotato.png", [128,81]);
+var Image_playIcon = new ImageURL(pathForGame+"images/playIcon.png", [40,40]);
+var Image_paused = new ImageURL(pathForGame+"images/paused.png", [195,176]);
+var Image_pauseButton = new ImageURL(pathForGame+"images/pauseButton.png", [40,40]);
+var Image_ninjaPotatoTitle = new ImageURL(pathForGame+"images/ninjaPotatoTitle.png", [577,85]);
+var Image_music_nonmuted = new ImageURL(pathForGame+"images/music_nonmuted.png", [40,40]);
+var Image_music_muted = new ImageURL(pathForGame+"images/music_muted.png", [40,40]);
+var Image_menuPotato = new ImageURL(pathForGame+"images/menuPotato.png", [128,81]);
+var Image_magicSplash = new ImageURL(pathForGame+"images/magicSplash.png", [130,117]);
+var Image_magicPotato = new ImageURL(pathForGame+"images/magicPotato.png", [88,88]);
+var Image_highscores = new ImageURL(pathForGame+"images/highscores.png", [160,42]);
+var Image_goldenSplash = new ImageURL(pathForGame+"images/goldenSplash.png", [130,117]);
+var Image_goldenPotato = new ImageURL(pathForGame+"images/goldenPotato.png", [88,88]);
+
+IMAGEURL_ALL = [Image_splash,Image_sound_nonmuted,Image_sound_muted,Image_rottenSplash,Image_rottenPotato,Image_potato,Image_playPotato,Image_playIcon,Image_paused,Image_pauseButton,Image_ninjaPotatoTitle,Image_music_nonmuted,Image_music_muted,Image_menuPotato,Image_magicSplash,Image_magicPotato,Image_highscores,Image_goldenSplash,Image_goldenPotato];

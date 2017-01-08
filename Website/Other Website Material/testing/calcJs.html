@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> this will be a simple calculator</p>
+
+<p> first number</p>
+<input id="first"  type="number">
+<p> second number</p>
+<input id="second"  type="number">
+
+<button type="button" onclick="add()"> add</button>
+<button type="button" onclick="subtract()"> subtract</button>
+<button type="button" onclick="mutilple()"> multiply</button>
+<button type="button" onclick="divide()"> divide</button>
+<button type="button" onclick="mod()"> mod</button>
+<p id="result"></p>
+
+<script>
+function add(){
+var x;
+var y;
+var z=0;
+ x = document.getElementById("first").value;
+  y = document.getElementById("second").value;
+   z=parseInt(x)+parseInt(y);
+  document.getElementById("result").innerHTML = z;
+  }
+  function subtract(){
+var x;
+var y;
+var z=0;
+ x = document.getElementById("first").value;
+  y = document.getElementById("second").value;
+   z=parseInt(x)-parseInt(y);
+  document.getElementById("result").innerHTML = z;
+  }
+  function mutilple(){
+var x;
+var y;
+var z=0
+ x = document.getElementById("first").value;
+  y = document.getElementById("second").value;
+   z=parseInt(x)*parseInt(y);
+  document.getElementById("result").innerHTML = z;
+  }
+  function divide(){
+var x;
+var y;
+var z=0
+ x = document.getElementById("first").value;
+  y = document.getElementById("second").value;
+   z=parseInt(x)/parseInt(y);
+  document.getElementById("result").innerHTML = z;
+  }
+function mod(){
+var x;
+var y;
+var z=0
+ x = document.getElementById("first").value;
+  y = document.getElementById("second").value;
+   z=parseInt(x)%parseInt(y);
+  document.getElementById("result").innerHTML = z;
+  }
+
+</script>
+</body>
+</html>

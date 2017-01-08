@@ -1,0 +1,126 @@
+<html>
+<body>
+
+<h1>Madlib program:</h1>
+
+<h2> <form align=middle> Driving Test: </form></h2>
+<p></p>
+<p></p>
+
+<p> <form align=middle> Adjective:
+<input id="adj1" type="text" onchange="updateLine('line1')" > 
+</form>
+</p>
+
+<p> <form align=middle> Adjective:
+<input id="adj2" type="string" onchange="updateLine('line3')">
+</form>
+</p>
+
+<p> <form align=middle> Adjective:
+<input id="adj3" type="string"></form>
+</p>
+
+
+<p> <form align=middle> Adverb:
+<input id="adverb" type="string"></form>
+</p>
+
+<p> <form align=middle> Noun:
+<input id="noun1" type="text" onchange="updateLine('line2')">
+</form>
+</p>
+
+<p> <form align=middle> Noun:
+<input id="noun2" type="text" onchange="updateLine('line2')">
+</form>
+</p>
+
+<p> <form align=middle> Noun:
+<input id="noun3" type="string" onchange="updateLine('line3')">
+</form>
+</p>
+
+<p> <form align=middle> Noun:
+<input id="noun4" type="string"></form>
+</p>
+
+<p> <form align=middle> Noun:
+<input id="noun5" type="string"></form>
+</p>
+
+<p> <form align=middle> Noun:
+<input id="noun6" type="string" value="______">
+</p>
+
+<p> <form align=middle> Plural Noun:
+<input id="pluralNoun" type="string">
+</p>
+
+<p></p>
+
+<p id="line1"> Driving a car can be fun if you follow this ______ advice: </p>
+
+<p id="line2">When approaching a ______ on the right, always blow your ______.</p>
+
+<p id="line3">Before making a ______ turn, always stick your ______ out of the window.</p>
+
+<p id="line4">Every 2000 miles, have your ___8__ inspected and your ___9__ checked.</p>
+
+<p id="line5">When approaching a school, watch out for __3___ __10___.</p>
+
+<p id="line6">Above all, drive ___4__. The __11__ you save may be your own?</p>
+
+
+<script>
+function updateLine(id)
+{
+	var currentLine = document.getElementById(id);
+	if(id == "line1") {
+		currnetLine.innerHTML = 
+		"Driving a car can be fun if you follow this <b>" + adj1.value + "</b> advice:";
+	}
+	else if(id == "line2"){
+		currentLine.innerHTML = "When approaching a ";
+		if(noun1.value != "" && noun1.value != "") 
+			currentLine.innerHTML += "<b>" + noun1.value + "</b>";
+		else
+			currentLine.innerHTML += "_____";
+		
+		currentLine.innerHTML += " on the right, always blow your ";
+		if(noun2.value != "" && noun2.value != "") 
+			currentLine.innerHTML += "<b>" + noun2.value + "</b>.";
+		else
+			currentLine.innerHTML += "_____.";
+	
+	}
+	else if(id == "line3"){
+		currentLine.innerHTML = "Before making a ";
+		
+		if(aj2.value != "" && adj2.value != "") 
+			currentLine.innerHTML += "<b>" + adj2.value + "</b>";
+		else
+			currentLine.innerHTML += "_____";
+			
+		currentLine.innerHTML += " turn, always stick your ";
+		
+		if(noun3.value != "" && noun3.value != "") 
+			currentLine.innerHTML += "<b>" + noun3.value + "</b>";
+		else
+			currentLine.innerHTML += "_____";
+			
+		currentLine.innerHTML += " out of the window.";
+	}
+	//TODO finish the last few lines
+//	else if(id == "line4")
+		//document.getElementById(id).innerHTML = 
+	//else if(id == "line5")
+		//document.getElementById(id).innerHTML = 
+	//else if(id == "line6")
+		//document.getElementById(id).innerHTML = 
+		
+		
+}
+</script>
+</body>
+</html>

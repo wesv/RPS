@@ -1,0 +1,237 @@
+﻿body,html{
+    color:black;
+    background: rgb(237, 237, 237);
+    /*overflow-y:hidden;*/
+}
+.header {
+    height:48px;
+    margin: 0vh 0vh 0vh 0vh;
+}
+
+.header-inside {
+    margin: 0;
+    background: white;
+    width: 100%;
+    height: 48px;
+    padding-left: 3px;
+    position:fixed;
+    border-bottom:1px solid #c3c3c3;
+}
+
+.header-item {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+    .header-item a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .header-item a:hover {
+            color: #c3c3c3;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+.header-item-hangout {
+    position: absolute;
+    top: 14%;
+    right: 2%;
+}
+#uploadToken{
+    display:none;
+    color:green;
+}
+#uploadToken::before { 
+    color:black;
+    content: "Upload Token: ";
+}
+
+.header-title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 10px;
+    color:black;
+}
+.search-combo{
+    display:inline;
+}
+.search-bar{
+    vertical-align:text-bottom;
+    font-size:17px;
+}
+.search-button{
+    height:26px;
+    vertical-align:text-bottom;
+}
+.host-game{
+    position:fixed;
+    width:14vw;
+    left:0vw;
+    /*left:15vw;*/
+    background:#161616;
+    color:white;
+    overflow-wrap:break-word;
+    height:100vh;
+    z-index:888;
+    padding:4px;
+}
+.gameid-text{
+    margin-bottom: 3px;
+    width:13vw;
+    max-width:13vw;
+}
+.my-game{
+    background:#272727;
+    padding:3px;
+    margin-bottom:3px;
+}
+.my-game:hover{
+    cursor:pointer;
+    background:green;
+}
+.host-game-sep{
+    margin-bottom:20px;
+}
+.big-font{
+    font-size:15px;
+    margin-bottom:3px;
+}
+.host-game-title{
+    font-size:20px;
+    margin-bottom:5px;
+    border-bottom: 1px solid;
+}
+#closeHostGame{
+    float:right;
+    color:red;
+}
+#closeHostGame:hover{
+    cursor:pointer;
+    color:orange;
+}
+.half{
+    position:relative !important;
+}
+.half-left{
+    float:left;
+}
+.menu-bar{
+    position:fixed;
+    z-index:999;
+    height:100vh;
+    width:15vw;
+    /*top:48px;*/
+    background:white;
+    border-right:1px solid #c3c3c3;
+    border-top:1px solid #c3c3c3;
+}
+.menu-bar-item{
+    padding:6px 6px 6px 10px;
+    color:black;
+    font-size:20px;
+    margin-bottom:3px;
+}
+    .menu-bar-item:hover {
+        background:#04c60e;
+        cursor:pointer;
+    }
+.menu-bar-item a{
+    color:green;
+}
+.menu-bar-item a:hover{
+    color:red;
+}
+.revokeAccess{
+    position:absolute;
+    bottom:50px;
+    font-size:14px;
+}
+.half-right{
+    background: rgb(237, 237, 237);
+    width:78vw;
+    padding-top:10px;
+    height:100vh;
+    margin-left:19vw;
+    padding-right:2vw;
+    /*overflow-y:scroll !important;*/
+	-webkit-user-select:none;
+}
+.box{
+   /* margin:2vh 1vw 2vh 1vw; */
+   margin: 10px 10px 10px 10px;
+    display:inline-block;
+    /*padding:1vw;*/
+    width:208px;
+    /*height:;*/
+    background: #FFF;
+    color:black;
+  /*  word-wrap:break-word;*/
+    vertical-align:top;
+    border-radius:4px;
+	border-bottom: 1px solid #c4c4c4;
+	border-left: 1px solid #d3d3d3;
+	border-right: 1px solid #d3d3d3;
+	border-top: 1px solid #d3d3d3;
+}
+    .box:hover {
+        cursor:pointer;
+		outline: #679FFF 1px solid ;
+		border-bottom: 1px solid #679FFF;
+		border-left: 1px solid #679FFF;
+		border-right: 1px solid #679FFF;
+		border-top: 1px solid #679FFF;
+        /*background: #04c60e;*/
+    }
+	
+.box-top{
+	height: 260px;
+	background-color:blue;
+}
+
+.box-bottom{
+	border-top: 1px solid #e2e2e2;
+	padding-top: 10px;
+	padding-right: 22px;
+	padding-bottom: 14px;
+	padding-left: 14px;
+	
+	position: relative;
+	
+	
+}
+
+.box-room-name {
+	margin-bottom:3px;
+	overflow-x:hidden;
+	-webkit-user-select: initial;
+	
+}
+
+.box-game-name{
+	color:#7d7d7d;
+	font-size:85%;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	text-overflow:ellipsis;
+}
+
+.box-players {
+	position:absolute;
+	right:3%;
+	top:66%;
+}
+/*
+.box-title{
+    -webkit-margin-before:.2em;
+}
+.box-inner {
+    position:relative;
+}
+
+.box-bottom{
+    position:absolute;
+    top:20vh;
+}*/

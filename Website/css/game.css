@@ -1,0 +1,128 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    /*background: #484848;*/
+    color: white;
+    font-family: Arial;
+}
+
+.menu-button {
+	display: inline-block;
+	/*padding:3px;*/
+	position: relative;
+	color: black;
+	background-color: white;
+	border: 2px solid white;
+	/*position:absolute;*/
+	width: 140px;
+	vertical-align:top;
+	text-align:center;
+}
+
+.top {
+	padding:10px;
+}
+
+.bottom {
+	font-size: 24px;
+}
+
+.quit-game {
+	padding: 3px;
+}
+
+	.quit-game:hover{
+		background-color: #c6040e;
+		border-color: #c6040e;
+		cursor:pointer;
+	}
+
+.hangout {
+	border: 0px;
+	background: initial;
+}
+	
+.next-turn {
+	padding:3px;
+}
+
+	.next-turn:hover {
+		background-color: #04c60e;
+		border-color: #04c60e;
+		cursor:pointer;
+	}
+
+
+.close-game {
+	padding: 3px;
+	display:none
+}
+
+	.close-game:hover {
+		background-color: #c6040e;
+		border-color: #c6040e;
+		cursor:pointer;
+	}
+
+.get-players {
+	padding: 3px;
+	
+}	
+
+	.get-players:hover { 
+		background-color:#0099FF;
+		border-color: #0099FF;
+		cursor:pointer;
+	}
+
+
+.row {
+	padding: 10px;
+	height: 28px;
+}
+
+
+.alert{
+    position:absolute;
+    top:45%;
+    left:45%;
+    margin: 0 auto;
+    width:50vw;
+    height:30px;
+}
+.alert-window{
+    position:relative;
+    width:300px;
+    background:WHITE;
+    padding:15px 20px 20px 20px;
+    z-index:666;
+    color:BLACK;
+	border:2px solid black;
+    box-shadow:1px 1px 1px black;
+	
+	visibility:hidden;
+}
+.alert-title {
+    top:100%;
+    font-size:25px;
+    margin-bottom:5px;
+	border-bottom:1px solid BLACK;
+	text-align:center;
+}
+.alert-description {
+    word-wrap:break-word;
+    margin-bottom:10px;
+}
+.alert-button{
+    padding:2px;
+    font-size:15px;
+	margin-left:auto;
+	margin-right:0px;
+	width:55px;
+}
+
+.alert-button:hover {
+    cursor:pointer;
+	outline: #679FFF 1px solid ;
+		
+}

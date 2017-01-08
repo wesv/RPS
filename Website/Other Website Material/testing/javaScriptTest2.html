@@ -1,0 +1,42 @@
+<html>
+<body>
+<h1>Please enter an integer.--</h1>
+
+<p>Enter a number as I try to find whether or not it's a prime.</p>
+
+<input id="in" type="number">
+
+<button type="button" onclick="findPrime()">Enter</button>
+
+<p id="text">Your number is...</p>
+
+<script>
+function findPrime()
+{
+	var x, output;
+	
+	x = document.getElementById("in").value;
+	output = "";
+	
+	if(!isNaN(x) && x > 1 && parseInt(x) == x)
+	{
+		var half = parseInt(x/2);
+		
+		for(var y = 2; y <= half; y++)
+		{
+			if(x % y == 0){
+				output = "not";
+				break;
+			}
+		}
+		
+		document.getElementById("text").innerHTML = "Your number is " + output + " prime.";
+	}
+	else 
+		document.getElementById("text").innerHTML = "Your number is not a valid number. -.-";
+	
+}
+</script>
+
+</body>
+</html>

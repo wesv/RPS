@@ -1,0 +1,14 @@
+span{
+	color: red;
+	font-size: 50px;
+}
+
+
+.outer-set{
+float: right;
+}
+
+.setting{
+left:95%;
+position: fixed;
+}

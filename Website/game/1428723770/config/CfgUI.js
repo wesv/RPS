@@ -1,0 +1,1 @@
+var UI_Potato = new UI("potato", 0, 0, 0, false, null, null, Script_potatoClicked);

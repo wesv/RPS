@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p> enter your stats of your character</p>
+
+<p>Strength 
+<input id="str"  type="number">  
+</p>
+
+<p>Dexterity
+	<input id="dex"  type="number">
+</p>
+
+<p>Constitution 
+	<input id="con"  type="number">
+</p>
+
+<p>Intelligence 
+	<input id="int"  type="number">
+</p>
+
+<p>Wisdom 
+	<input id="wis"  type="number">
+</p>
+
+<p>Charisma 
+	<input id="cha"  type="number">
+</p>
+
+<p id="result">    n</p>
+
+<button type="button" onclick="calc()"> enter</button>
+
+<script>
+function calc(){
+
+ var s = (document.getElementById("str").value -10)/2;
+ var d = (document.getElementById("dex").value-10)/2;
+ var c = (document.getElementById("con").value-10)/2;
+ var i = (document.getElementById("int").value-10)/2;
+ var w = (document.getElementById("wis").value-10)/2;
+ var ch =( document.getElementById("cha").value-10)/2;
+
+  document.getElementById("result").innerHTML =" Strength mod is "+ s +" Dexterity mod is "+ d + " Constituion mod is "+ c 
+  + " Intelligence mod is "+i+ " Wisdom mod is "+ w+ " Charisma mod is "+ ch;
+}
+
+
+
+</script>
+</body>
+</html>

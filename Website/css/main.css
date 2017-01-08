@@ -1,0 +1,273 @@
+﻿body, html {
+    padding: 0;
+    margin: 0;
+    /*background: #484848;*/
+    color: white;
+    font-family: Arial;
+}
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:orange;
+}
+
+
+.white{
+    color:white;
+}
+
+.header {
+    padding: 0;
+    margin: 0;
+    height: 6vh;
+    /*background:black;*/
+    z-index: 999 !important;
+    margin-bottom: -6vh;
+}
+
+.header-inside {
+    margin: 0;
+    background: rgba(0,0,0,.3);
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    padding-left: 3px;
+    z-index: 999 !important;
+}
+
+.header-item {
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 3px;
+    z-index: 999 !important;
+}
+
+    .header-item a {
+        color: white;
+        text-decoration: none;
+        z-index: 999 !important;
+    }
+
+        .header-item a:hover {
+            color: #c3c3c3;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+.header-item-logout {
+    border: 2px solid white;
+    position: absolute;
+    top: 14%;
+    right: 2%;
+}
+
+    .header-item-logout:hover, .header-item-logout a:hover {
+        background: #0592b9;
+        text-decoration: none;
+        color:white;
+    }
+
+.header-title {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-right: 10px;
+}
+
+.header-item-logout:hover{
+    background: #0592b9;
+    cursor:pointer;
+}
+
+.loginPopup {
+    /*background-image: url("../img/googleLoginButton.png");*/
+    padding: 10px;
+    position: fixed;
+    z-index: 909;
+    right: 1.5%;
+    top: 5%;
+    display: none;
+    background: rgba(0,0,0,.3);
+}
+
+
+#customBtn {
+    display: inline-block;
+    background: #dd4b39;
+    color: white;
+    width: 185px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+    #customBtn:hover {
+        background: #e74b37;
+        cursor: pointer;
+    }
+
+span.label {
+    font-weight: bold;
+}
+
+span.icon {
+    background: url("../img/gplus.png") transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    border-right: #bb3f30 1px solid;
+}
+
+span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 4px;
+    padding-right: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto',arial,sans-serif;
+}
+
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    /*width:1020px;*/
+}
+
+.std {
+    padding: 4px;
+}
+
+.section {
+    /*background-attachment:fixed;*/
+    position: relative;
+    color: black;
+}
+
+.top-section {
+    height: 100%;
+    background-attachment: fixed;
+    background-image: url('../img/mainPagePic.jpg');
+    background-repeat: no-repeat;
+	background-position: center;
+    height: 98vh;
+    width: 100%;
+	background-color: black;
+}
+
+.title-text {
+    margin: 0 auto;
+    top: 38%;
+    left: 0%;
+    right: 50%;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.title-text-top {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+    text-shadow: 1px 1px 26px #000000;
+    font-size: 75px;
+    color: white;
+}
+
+.title-text-breaker {
+    width: 60%;
+    height: 1%;
+    background: #ffffff;
+    left: 20%;
+    position: absolute;
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none;
+}
+
+.title-text-bottom {
+    text-shadow: 1px 1px 3px #000000;
+    font-size: 50px;
+    color: #96ff00;
+}
+
+
+.inside {
+    background: white;
+    /*margin-left:15%;
+    margin-right:15%;*/
+    /*border-right:2px solid green;
+    border-left:2px solid green;*/
+}
+
+.banner {
+    background-color: green;
+    padding: 4px;
+    font-size: x-large;
+    color: white;
+    box-shadow: 0px 0px 1px gray;
+}
+
+.content {
+    padding: 8px;
+    width: 60vw;
+    margin:0 auto;
+}
+
+.about-part-list{
+    text-align:center;
+    height:36vh;
+}
+
+.about-part{
+    display:inline-block;
+    width:31%;
+    margin:0 auto;
+    background:#42DA57;
+    height:100%;
+    clear:both;
+    vertical-align:top;
+    padding:10px;
+}
+
+.about-text{
+    text-align:left;
+}
+
+.about-icon{
+    padding:10px;
+}
+
+.about{
+    margin-bottom:16px;
+    width:100%;
+}
+
+.download-btn{
+    background:red;
+    border-radius:5px;
+    padding:5px;
+    font-size:22px;
+    width:152px;
+    color:white;
+}
+    .download-btn:hover {
+        background:#ff3636;
+        cursor:pointer;
+    }
+
+    .download-btn span {
+        display:inline-block;
+        vertical-align:middle;
+    }
+
+.dl-left{
+    background:url("../img/dl-small-white.png");
+    width:32px;
+    height:32px;
+}

@@ -1,0 +1,94 @@
+<?php
+	session_start();
+	
+	//Kayler, please do not modify. If you have issues signing in, let me know
+	//because it could cause a larger error later
+	if(!isset($_SESSION['access_token']) || isset($_SESSION['logout'])){
+		header('Location: /index.php');
+	}
+	
+?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rat Pack Studios - Game Lobbies</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js?onload=start" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script type="text/javascript" src="js/signOutEvent.js"></script>
+    <script type="text/javascript" src="js/mainPage.js"></script>
+	<link href="css/index.css" rel="stylesheet" />
+	<link href="css/mainPage.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header-inside">
+                <div class="header-item header-title">Rat Pack Studios</div>
+                <div class="header-item" id="search">
+					<input class="search-bar search-combo" id='searchBox' type="text" />
+                    <button class="search-button search-combo" onclick="search()">Search</button>
+				</div>
+				<div class="header-item header-item-hangout">
+                    <div id="placeholder-div1"></div>
+                </div>
+                <div class="header-item" id="uploadToken"></div>
+            </div>
+        </div>
+        <div class="half half-left">
+            <div class="menu-bar">
+                <div class="menu-bar-item">
+                    Home
+                </div>
+                <div class="menu-bar-item">
+                    My Games
+                </div>
+                <div class="menu-bar-item" id="hostGame"><!-- onclick="window.location.href = 'game/game.php?game=1428723770&roomID=testRoom5'"-->
+                    Host a Game
+                </div>
+                <div class="menu-bar-item" onclick="getKey();">
+                    Get Upload Key <a onclick="alert('Upload keys are used for developers to upload their games to the website.');">(?)</a>
+                </div>
+                <div class="menu-bar-item">
+                    Download Editor
+                </div>
+                <div class="menu-bar-item" onclick="signOut();">
+                    Sign Out
+                </div>
+                <div class="menu-bar-item revokeAccess" onclick="revoke();">
+                    Revoke Google Access
+                </div>
+            </div>
+            <div class="host-game">
+                <div class="host-game-title">
+                    <div>
+                        Host a Game<span id="closeHostGame">X</span>
+                    </div>
+                </div>
+				<div class="host-game-content">
+                    <div class="host-game-sep">
+						<div class="big-font">Your Games</div>
+						<div class="my-games">
+							<div class="my-game">Title 1</div>
+                            <div class="my-game">Title 2</div>
+                            <div class="my-game">Title 3</div>
+						</div>
+					</div>
+                    <div class="host-game-sep">
+                        <div class="big-font">Create with GameID</div>
+						<div class="create-game">
+                            <input class="search-combo gameid-text" type="text" />
+                            <button class="search-combo host-game-create" onclick="create()">Create</button>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+		<div class="half half-right" id="boxes"><!--boxes go here--></div>
+    </div><!-- END WRAPPER -->
+	<br>
+	<div id="clientState" style="display: none"><?php echo $_SESSION['state'] ?></div>
+</body>
+</html>

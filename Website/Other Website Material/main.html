@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js?onload=start" async defer></script> 
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<script type="text/javascript" src="js/scrollEffects.js"> </script>
+    <!--<script type="text/javascript" src="js/signInButtonEvent.js"> </script>
+    --><script type="text/javascript" src="js/menuButtonEvents.js"> </script>
+    <script type="text/javascript" src="js/download.js"> </script>
+    <script type="text/javascript" src="js/hangouts.js"> </script>
+	<link href="css/main.css" rel="stylesheet" />
+    <link href="css/styleDownload.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <title></title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-inside">
+            <div class="header-item header-title">Rat Pack Studios</div>
+            <div class="header-item" id="home"><a>Top of Page</a></div>
+            <div class="header-item" id="about"><a>About</a></div>
+            <div class="header-item" id="preview"><a>Download</a></div>
+			<div class="header-item" id="searchBox"><input type=text></input></div>
+			<div class="header-item" id="searchButton"><img src="C:\Users\Squiggles\rat-pack-studio\Website\img\download.png"></div>
+            <div class="header-item header-item-hangout" id="hangout">Yes?</div>
+        </div>
+        <!--<div class="loginPopup">
+            <div id="gSignInWrapper">
+                <div id="customBtn" class="customGPlusSignIn">
+                    <span class="icon"></span>
+                    <span class="buttonText"
+                          data-scope="https://www.googleapis.com/auth/plus.login"
+                          data-clientid="694270436499-0t218372930j73vc5pfdj0au568c59ds.apps.googleusercontent.com"
+                          data-redirecturi="postmessage"
+                          data-accesstype="offline"
+                          data-cookiepolicy="single_host_origin"
+                          data-callback="signInCallback">
+                    Sign in with Google
+                    </span>
+                    <div id="result"></div>
+                </div>
+            </div>
+        </div>--->
+    </div>
+    <div class="wrapper">
+        <div class="section top-section">
+            <!--<div class="title-text">
+                <div class="title-text-top">
+                    Modern Games in a Modern Editor
+                </div>
+                <br />
+                <div class="title-text-breaker"></div>
+                <br />
+                <div class="title-text-bottom">
+                    - Rat Pack Studios -
+                </div>
+            </div>-->
+        </div>
+        <div class="section" id="aboutContent">
+             <div class="inside">
+                 <div class="content">
+                     <h1>About Rat Pack Studios</h1>
+                     <div class="about">
+                         Rat Pack Stuios will feature a full graphics engine, game networking, social interaction with other players, lobbies for games made by developers, and a touch of awesome.
+                     </div>
+                     <div class="about-part-list">
+                         <div class="about-part">
+                             <h3>The Story</h3>
+                             <img class="about-icon" src="img/origin.png" /><br />
+                             <span class="about-text">
+                                 Rat pack studios is the result of 3 people at Iowa State University focusing their programming efforts for the coms 309 project class.<br>This project will take 3 months to finish and is off to a fantastic start.
+                             </span>
+                         </div>
+                         <div class="about-part">
+                            <h3>The Team</h3>
+                             <img class="about-icon" src="img/team.png" /><br />
+                             <span class="about-text">
+                                 Rat Pack Studios was created and coded by Kayler Renslow, Zach King, and Wesley Vansteenburg.
+                             </span>
+                         </div>
+                         <div class="about-part">
+                            <h3>The Software</h3>
+                             <img class="about-icon" src="img/software.png" /><br />
+                             <span class="about-text">
+                                 Rat Pack Studios is a modern game editor and creation tool to allow people to easily make 2D board games. So far, the program is in very early stages of development and not much is done.
+                             </span>
+                         </div>
+                     </div>
+                     <br /><br /><br /><br />
+                     <div onclick="pop()" class="download-btn" href="img/download.jpg" download>
+                         <span class="dl-left"></span>
+                         <span class="dl-right">Download</span>
+                     </div>
+                     Most Recent Build (v0.01a)
+                 </div>
+            </div>
+        </div>
+        <div class="section" id="previewContent">
+            <div class="inside" style="background: #5A6259;">
+                <div class="content white">
+                    <h1 class="white">Preview the Editor</h1>
+                    <img src="img/preview.png" style="float:left;padding-right:5px;"/>
+                    To the left is a photo of what the editor looks like at startup.
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+            </div>
+        </div>
+
+    <img border="0" src="img/arrow.png" alt="down" id="arrow" width="64" height="64">
+    </div><!-- END WRAPPER -->
+</body>
+</html>
